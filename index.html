@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CXD · 记录生活</title>
-    <!-- 外部样式 -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome 图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -17,7 +14,7 @@
     <div class="modal-overlay" id="modalOverlay">
         <div class="modal-box">
             <div class="modal-icon"><i class="fas fa-code"></i></div>
-            <h2>网页正在开发中</h2>
+            <h2>🚧 网页正在开发中</h2>
             <p>内容仅供参考，更多精彩即将上线！</p>
             <button class="btn btn-primary" id="modalCloseBtn">我知道了</button>
         </div>
@@ -33,7 +30,6 @@
                 <li><a href="#projects">记录</a></li>
                 <li><a href="#contact" class="nav-cta">联系我</a></li>
             </ul>
-            <!-- 主题切换按钮 -->
             <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
                 <i class="fas fa-moon"></i>
             </button>
@@ -69,7 +65,6 @@
             <div class="hero-visual">
                 <div class="avatar-wrapper">
                     <div class="avatar">
-                        <!-- 头像图片可替换 -->
                         <i class="fas fa-user-astronaut"></i>
                     </div>
                     <div class="floating-icon"><i class="fas fa-bicycle"></i></div>
@@ -204,52 +199,43 @@
         </div>
     </section>
 
-    <!-- ===== 联系 ===== -->
+    <!-- ===== 联系（已删除表单，只保留信息） ===== -->
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">联系 <span class="highlight">我</span></h2>
-            <p class="section-subtitle">有合作想法或只是想打个招呼？欢迎随时联系，我会尽快回复。</p>
-            <div class="contact-wrapper">
-                <div class="contact-info">
+            <p class="section-subtitle">有合作想法或只是想打个招呼？欢迎通过以下方式找到我。</p>
+            <div class="contact-wrapper single-col">
+                <div class="contact-info" style="max-width:600px; margin:0 auto; text-align:center;">
                     <h3>保持联系</h3>
                     <p>无论你是想讨论运动、生活，还是单纯交个朋友，我都非常乐意。</p>
-                    <div class="contact-item">
+                    <div class="contact-item" style="justify-content:center;">
                         <div class="icon"><i class="fab fa-bilibili"></i></div>
                         <div class="info">
                             B站：CXD-NB
                             <small>@CXD-NB的个人空间</small>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" style="justify-content:center;">
                         <div class="icon"><i class="fab fa-tiktok"></i></div>
                         <div class="info">
                             抖音：40036371097
                             <small>记录运动与生活</small>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" style="justify-content:center;">
                         <div class="icon"><i class="fas fa-envelope"></i></div>
                         <div class="info">
-                            cxd.qqcom@qq.com
+                            cxd@email.me
                             <small>随时邮件联系</small>
                         </div>
                     </div>
-                    <div class="social-links">
+                    <div class="social-links" style="justify-content:center;">
                         <a href="https://b23.tv/owt5Dix" target="_blank" aria-label="B站"><i class="fab fa-bilibili"></i></a>
                         <a href="#" target="_blank" aria-label="抖音"><i class="fab fa-tiktok"></i></a>
                         <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
                         <a href="#" aria-label="邮箱"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="你的名字" required />
-                    <input type="email" placeholder="邮箱地址" required />
-                    <input type="text" placeholder="主题" />
-                    <textarea placeholder="想说什么呢？" required></textarea>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> 发送消息
-                    </button>
-                </form>
             </div>
         </div>
     </section>
@@ -268,8 +254,6 @@
         </div>
     </footer>
 
-    <!-- ===== JavaScript ===== -->
     <script src="script.js"></script>
 </body>
 </html>
-
