@@ -105,3 +105,25 @@
     });
 
 })();
+/* ===== 联系区单栏布局（删除表单后使用） ===== */
+.contact-wrapper.single-col {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 56px;
+}
+.contact-wrapper.single-col .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-wrapper.single-col .contact-item {
+    justify-content: center;
+}
+.contact-wrapper.single-col .social-links {
+    justify-content: center;
+}
+/* 响应式适配 */
+@media (max-width: 900px) {
+    .contact-wrapper.single-col {
+        padding: 32px 24px;
+    }
+}
